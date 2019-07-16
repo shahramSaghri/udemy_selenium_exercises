@@ -1,0 +1,43 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo {
+	
+	public static void main(String[] args) {
+		
+		//invoke the chrome exe file
+//		
+		System.getProperty("webdriver.chrome.driver", 
+				"/Documents/Udemy/Selenium-WebDriver-with-Java-Basic-to-advance/browser-exe-files/chrome/chromedriver.exe");
+		//Instantiate a webdriver object
+		//write to interface
+		WebDriver driver = new ChromeDriver();
+		
+		//Open a website in chrome browser
+		driver.get("http:/google.com");
+		
+		//getting the title of the above page
+		String title = driver.getTitle();
+		System.out.println(title);
+		
+		//Check to see if you are landed in the correct url
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		
+		//To get page source
+		String pageSource = driver.getPageSource();
+		//System.out.println(pa  geSource);
+		
+		//After hitting google website in above statement the following statement
+		//hits the yahoo.
+		driver.get("http://yahoo.com");
+		
+		//To navigate back to google:
+		driver.navigate().back();
+		driver.navigate().forward();
+		
+		//To close the browser that you opened in the beginning:
+		driver.close();
+	}
+
+}
