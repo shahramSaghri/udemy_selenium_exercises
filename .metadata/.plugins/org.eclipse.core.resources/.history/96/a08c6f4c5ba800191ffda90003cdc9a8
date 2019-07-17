@@ -1,0 +1,10 @@
+
+public class SalesforceE2E {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.getProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
+	}
+
+}
