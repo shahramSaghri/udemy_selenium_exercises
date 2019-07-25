@@ -1,0 +1,12 @@
+
+public class ClickAcademy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stu
+
+		System.getProperty("webdriver.chrome.driver", 
+				"/Documents/Udemy/Selenium-WebDriver-with-Java-Basic-to-advance/browser-exe-files/chrome/chromedriver.exe");
+
+	}
+
+}
